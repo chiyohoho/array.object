@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                fontFamily: {
+                    sans: ["Roboto", "sans-serif"],
+                    body: ["Roboto", "sans-serif"],
+                    mono: ["ui-monospace", "monospace"],
+                },
+            },
+            corePlugins: {
+                preflight: false,
+            },
+        };
+    </script>
+
+</head>
+
+<body>
+    <header class="shadow-md shadow-black-400">
+        <div class="header_container">
+            <div class="header_left">
+                <img class="header_logo" src="https://csgoskins.gg/media/images/logo/open-graph.png" alt=""
+                    style="max-width: 200px; height: 80px;">
+
+                <ul class="header_list">
+                    <li class="header_nav">Pistols</li>
+                    <li class="header_nav" style="font-weight: 500; opacity: 1;">Rifles</li>
+                    <li class="header_nav">SMGs</li>
+                    <li class="header_nav">Heavy</li>
+                    <li class="header_nav">Knives</li>
+                    <li class="header_nav">Gloves</li>
+                    <li class="header_nav">Cases</li>
+                    <li class="header_nav">Collections</li>
+                    <li class="header_nav">Tournaments</li>
+                    <li class="header_nav">Other</li>
+                </ul>
+            </div>
+
+            <div class="pt-2 relative text-gray-600 header_right">
+                <input
+                    class="header_search border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+                    type="search" name="search" placeholder="Search...">
+                <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+                    <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                        viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                        xml:space="preserve" width="512px" height="512px">
+                        <path
+                            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="main_container">
+            <div class="main_top">
+                <div class="about">
+                    <img src="https://cdn.csgoskins.gg/public/uih/weapons/aHR0cHM6Ly9zdGVhbWNkbi1hLmFrYW1haWhkLm5ldC9hcHBzLzczMC9pY29ucy9lY29uL3dlYXBvbnMvYmFzZV93ZWFwb25zL3dlYXBvbl9hazQ3LmEzMjBmMTNmZWE0ZjIxZDFlYjNiNDY2NzhkNmIxMmU5N2NiZDEwNTIucG5n/auto/auto/85/notrim/950b7e9a8d8c43eed1384f763d87523b.webp"
+                        alt="AK47" style="width: 300px; height: 170px;">
+
+                    <div class="about_des">
+                        <h1>AK-47 Skins</h1>
+                        <p>Browse and buy all AK-47 skins for CS:GO. Powerful and reliable, the AK-47 is one of the most
+                            popular assault rifles in the world. It is most deadly in short, controlled bursts of fire.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about_modal">
+                    <div class="space-y-2">
+                        <!-- Button trigger vertically centered modal-->
+                        <button type="button"
+                            class="click_button inline-block rounded bg-[#374151] px-12 pb-2 pt-2.5 text-[12px] font-medium uppercase text-white shadow-[0_4px_9px_-4px_#[#374151]] transition duration-150 ease-in-out hover:bg-[#4b5563] hover:shadow-[0_8px_9px_-4px_rgba(0,0,0,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-[#4b5563] focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+                            data-te-toggle="modal" data-te-target="#exampleModalCenter" data-te-ripple-init
+                            data-te-ripple-color="light">
+                            Advanced Search
+                        </button>
+                    </div>
+
+                    <!--Verically centered modal-->
+                    <div data-te-modal-init
+                        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+                        id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+                        aria-modal="true" role="dialog">
+                        <div data-te-modal-dialog-ref
+                            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+                            <div
+                                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+                                <div
+                                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                                    <!--Modal title-->
+                                    <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                                        id="exampleModalScrollableLabel">
+                                        Muốn tìm chi tiết hơn hử ?
+                                    </h5>
+                                    <!--Close button-->
+                                    <button type="button"
+                                        class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                                        data-te-modal-dismiss aria-label="Close">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6 18L18 6M6 6l12 12" />
+                                        </svg>
+                                    </button>
+                                </div>
+
+                                <!--Modal body-->
+                                <div class="relative p-4">
+                                    <p>Không có thời gian code nên là chịu khó vào <a
+                                            href="https://csgoskins.gg/weapons/ak-47" target="_blank"
+                                            style="font-weight: 500; color: orange;">web chính</a> mà tìm nha</p>
+                                </div>
+
+                                <!--Modal footer-->
+                                <div
+                                    class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                                    <button type="button"
+                                        class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                                        data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
+                                        OK
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_body">
+                <!-- <div class="main_card">
+                    <div class="card_top">
+                        <h3 class="card_name">Ice Coaled</h3>
+                        <p class="card_rare" style="background: #d32ce6;">Classified Rifle</p>
+                        <p class="card_special" style="background: #f89406;">StatTrak Available</p>
+                    </div>
+
+                    <div class="card_middle">
+                        <div class="case_info">
+                            <img src="https://cdn.csgoskins.gg/public/uih/items/aHR0cHM6Ly9zdGVhbWNkbi1hLmFrYW1haWhkLm5ldC9hcHBzLzczMC9pY29ucy9lY29uL2RlZmF1bHRfZ2VuZXJhdGVkL3dlYXBvbl9hazQ3X2N1X2FrNDdfY29ndGhpbmdzX2xpZ2h0X2xhcmdlLjliNDY3OGE3MGMzMTVlNWQ2MGEyMDM0MzZiN2E5NWNkNGM1ZGNjODkucG5n/auto/auto/85/notrim/bc13b2fd9ea48a6ffc74b418aac13e32.webp"
+                                style="width: 100%; height: 240px; cursor: pointer;" alt="">
+
+                            <div class="price_nonstt">
+                                <h5 class="price_from" style="display: inline-block;">$4.53<p>- </p><span
+                                        class="price_to"></span>$24.27</span>
+                                </h5>
+                            </div>
+                            <div class="price_stt">
+                                <h5 class="stt_from" style="display: inline-block;">$11.57<p>-</p><span
+                                        class="stt_to">$60.76</span>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="case_drop">
+                            <img class="case_img"
+                                src="https://cdn.csgoskins.gg/public/uih/items/aHR0cHM6Ly9zdGVhbWNkbi1hLmFrYW1haWhkLm5ldC9hcHBzLzczMC9pY29ucy9lY29uL3dlYXBvbl9jYXNlcy9jcmF0ZV9jb21tdW5pdHlfMzEuNDQwYjQzZjRhZDNmY2ZlMzQ0Y2U2M2I1ZDhjZjU5Y2Q4MDM0YmExYS5wbmc-/auto/50/85/notrim/a4bcc712c664318515a046de2980494d.webp"
+                                alt="recoil" style="width: 30px; height: 20px; cursor: pointer;">
+                            <p class="case_name">Recoil Case</p>
+                        </div>
+                    </div>
+
+                    <div class="card_bottom">
+                        <p><span>14K offers </span>on 19 markets</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- ---------SCRIPT----------- -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script src="js.js"></script>
+
+</body>
+
+</html>

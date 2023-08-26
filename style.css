@@ -1,0 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    background: #1f2937;
+    width: 100%;
+}
+
+.header_container {
+    position: relative;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1600px;
+    background: #1f2937;
+    font-size: 14px;
+
+
+}
+
+.header_container .header_left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header_container .header_list {
+    display: flex;
+    gap: 30px;
+}
+
+.header_container .header_list .header_nav {
+    color: #ffffff;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.header_container .header_right .header_search {
+    width: 400px;
+}
+
+/* -----------------MAIN */
+.main {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background: #111827;
+}
+
+.main .main_container {
+    width: 1600px;
+    margin: 0px auto;
+
+}
+
+.main .main_container .main_top {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.main .main_container .main_top .about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+.main .main_container .main_top .about .about_des h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.main .main_container .main_top .about .about_des p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #9ca3af;
+}
+
+.main .main_container .main_top .about_modal {
+    position: absolute;
+    right: -245px;
+    bottom: -100px;
+
+}
+
+/* -----------Main Card-------- */
+
+.main .main_container .main_body {
+    margin: 0 auto;
+    width: 1500px;
+    margin-top: 200px;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 50px;
+}
+
+.main .main_container .main_body .main_card {
+    width: 330px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: #1f2937;
+
+    text-align: center;
+}
+
+.main .main_container .main_body .main_card .card_top {
+    padding: 10px 10px 0px 10px;
+    height: 120px;
+}
+
+.main .main_container .main_body .main_card .card_top .card_name {
+    font-size: 18px;
+    color: white;
+    padding: 16px 0px;
+}
+
+.main .main_container .main_body .main_card .card_top .card_rare {
+    width: 100%;
+    height: 20px;
+
+    font-size: 14px;
+    color: black;
+    border-radius: 20px;
+    margin-bottom: 6px;
+
+}
+
+.main .main_container .main_body .main_card .card_top .card_special {
+    width: 100%;
+    height: 20px;
+
+    font-size: 14px;
+    color: black;
+    border-radius: 20px;
+}
+
+.main .main_container .main_body .main_card .card_middle {
+    padding: 0px 10px;
+    height: 350px;
+}
+
+.main .main_container .main_body .main_card .card_middle .case_info {
+    height: 85%;
+}
+
+.main .main_container .main_body .main_card .card_middle p {
+    display: inline-block;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.main .main_container .main_body .main_card .card_middle h5 {
+    cursor: pointer;
+}
+
+.main .main_container .main_body .main_card .card_middle span {
+    cursor: pointer;
+}
+
+.main .main_container .main_body .main_card .card_middle .price_nonstt {
+    color: white;
+    font-size: 18px;
+
+}
+
+.main .main_container .main_body .main_card .card_middle .price_stt {
+    color: #f89406;
+    font-size: 18px;
+
+}
+
+.main .main_container .main_body .main_card .card_middle .case_drop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+
+/* ---add class display */
+.display_class_block {
+    display: block;
+}
+
+.display_class_none {
+    display: none;
+}
+
+/* ---add class display */
+
+.main .main_container .main_body .main_card .card_middle .case_drop p {
+    font-size: 13px;
+    color: white;
+}
+
+.main .main_container .main_body .main_card .card_bottom {
+    padding: 10px;
+    background: #4b5563;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.main .main_container .main_body .main_card .card_bottom span {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main .main_container .main_body .main_card .card_bottom p {
+    color: #afb4bb;
+    cursor: pointer;
+    display: inline-block;
+}

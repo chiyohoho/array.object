@@ -279,6 +279,10 @@ footer .ft_container {
     justify-content: space-between;
 }
 
+footer .ft_container .ft_left .ft_logo {
+    cursor: pointer;
+}
+
 footer .ft_container .ft_left .ft_des {
     padding-left: 25px;
 }
@@ -322,8 +326,10 @@ footer .ft_container .ft_right .ftr_list p {
     margin-bottom: 5px;
 
     font-size: 14px;
+    transition: all 0.2s linear;
 }
 
 footer .ft_container .ft_right .ftr_list p:hover {
     opacity: 1;
+    transition: all 0.2s linear;
 }

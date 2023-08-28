@@ -38,12 +38,55 @@ header {
 
 .header_container .header_list .header_nav {
     color: #ffffff;
-    opacity: 0.8;
     cursor: pointer;
 }
 
 .header_container .header_right .header_search {
     width: 400px;
+}
+
+/* -----------Header Hover List-------- */
+header .header_container .header_list .header_nav {
+    position: relative;
+}
+
+header .header_container .header_list .header_nav .nav_title {
+    opacity: 0.8;
+    line-height: 50px;
+}
+
+header .header_container .header_list .header_nav .nav_title:hover {
+    opacity: 1;
+}
+
+
+header .header_container .header_list .header_nav .hover_list {
+    position: absolute;
+    overflow: hidden;
+    top: 45px;
+    border-radius: 3px;
+    width: 150px;
+
+    visibility: hidden;
+}
+
+header .header_container .header_list .header_nav:hover .hover_list {
+    visibility: visible;
+}
+
+header .header_container .header_list .header_nav .hover_list .hover_item {
+    padding: 5px 0px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 6px;
+    background: #374151;
+    line-height: 30px;
+
+}
+
+header .header_container .header_list .header_nav .hover_list .hover_item:hover {
+    background: #4b5563;
 }
 
 /* -----------------MAIN */
@@ -218,4 +261,69 @@ header {
     color: #afb4bb;
     cursor: pointer;
     display: inline-block;
+}
+
+/* -----------FOOTER -----------*/
+footer {
+    position: relative;
+    background-color: #1f2937;
+    padding-bottom: 50px;
+}
+
+footer .ft_container {
+    padding-top: 50px;
+    margin: 0px auto;
+    width: 1550px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .ft_container .ft_left .ft_des {
+    padding-left: 25px;
+}
+
+footer .ft_container .ft_left p {
+    font-size: 12px;
+    color: #8ca3af;
+}
+
+footer .ft_container .ft_left .ft_social i {
+    font-size: 30px;
+    color: #8ca3af;
+    transition: all 0.2s linear;
+    cursor: pointer;
+    padding: 10px 5px 10px 0px;
+}
+
+footer .ft_container .ft_left .ft_social i:hover {
+    color: white;
+    transition: all 0.2s linear;
+}
+
+footer .ft_container .ft_right {
+    display: flex;
+    padding-top: 30px;
+    padding-right: 30px;
+    gap: 70px;
+}
+
+footer .ft_container .ft_right .ftr_list h5 {
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+footer .ft_container .ft_right .ftr_list p {
+    color: white;
+    opacity: 0.7;
+    cursor: pointer;
+    margin-bottom: 5px;
+
+    font-size: 14px;
+}
+
+footer .ft_container .ft_right .ftr_list p:hover {
+    opacity: 1;
 }
